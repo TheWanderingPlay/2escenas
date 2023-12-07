@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+}
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    /* background-image: url(../multimedia/precipicio.png); */
+    background-color: blueviolet;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem 99%;
+}
+    .personaje{
+        position: absolute;
+        width: auto;
+        height: 90%;
+        -webkit-animation: vibrate-1 0.3s linear infinite both;
+        animation: vibrate-1 0.3s linear infinite both;
+    }
+    @-webkit-keyframes vibrate-1 {
+        0% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+        20% {
+          -webkit-transform: translate(-2px, 2px);
+                  transform: translate(-2px, 2px);
+        }
+        40% {
+          -webkit-transform: translate(-2px, -2px);
+                  transform: translate(-2px, -2px);
+        }
+        60% {
+          -webkit-transform: translate(2px, 2px);
+                  transform: translate(2px, 2px);
+        }
+        80% {
+          -webkit-transform: translate(2px, -2px);
+                  transform: translate(2px, -2px);
+        }
+        100% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+      }
+      @keyframes vibrate-1 {
+        0% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+        20% {
+          -webkit-transform: translate(-2px, 2px);
+                  transform: translate(-2px, 2px);
+        }
+        40% {
+          -webkit-transform: translate(-2px, -2px);
+                  transform: translate(-2px, -2px);
+        }
+        60% {
+          -webkit-transform: translate(2px, 2px);
+                  transform: translate(2px, 2px);
+        }
+        80% {
+          -webkit-transform: translate(2px, -2px);
+                  transform: translate(2px, -2px);
+        }
+        100% {
+          -webkit-transform: translate(0);
+                  transform: translate(0);
+        }
+      }
+
+    #izquierda{
+        position: absolute;
+        left:0;
+        background-color: aqua;
+        height: 24%;
+        width: 9%;
+        background-image: url(../multimedia/FlechaIzquierda.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #derecha{
+        position: absolute;
+        right:0;
+        background-color: red;
+        height: 24%;
+        width: 9%;
+        background-image: url(../multimedia/FlechaDerecha.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+.CuadroTexto{
+    box-sizing: border-box;
+    padding: 0px 3vh;
+    width: 100vw;
+    height: 20vh;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* animados--------------------------------
+animados--------------------------------
+animados--------------------------------
+animados-------------------------------- */
+
+.personaje_A{
+    animation: caida 10s forwards linear ;
+}
+    
+@keyframes caida{
+        0%{
+            transform: scale(1) rotate(0deg);
+        }
+        50%{
+            transform: scale(0.4) rotate(984deg);
+        }
+        100%{
+            transform: scale(0.01) rotate(1800deg);
+        }
+    }
+/* #CaidaI{
+    transition: 1s;
+    font-family: center;
+    animation: cualquiera 10s forwards linear;
+}
+    
+    @keyframes caidaI{
+        0%{
+            transform: scale(1) rotate(0deg);
+        }
+        50%{
+            transform: scale(0.4) rotate(984deg);
+        }
+        100%{
+            transform: scale(0.01) rotate(1800deg);
+        }
+    } */

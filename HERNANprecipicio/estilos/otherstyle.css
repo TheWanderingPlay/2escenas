@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+.contenedor{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+    /* background-image: url(../multimedia/aldea.jpg); */
+    background-color: gold;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0rem 99%;
+}
+    .personaje{
+        position: absolute;
+        width: auto;
+        height: 90%;    
+    }
+
+    #izquierda{
+        position: absolute;
+        left:0;
+        background-color: aqua;
+        height: 24%;
+        width: 9%;
+        background-image: url(../multimedia/FlechaIzquierda.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    #derecha{
+        position: absolute;
+        right:0;
+        background-color: red;
+        height: 24%;
+        width: 9%;
+        background-image: url(../multimedia/FlechaDerecha.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+.CuadroTexto{
+    box-sizing: border-box;
+    padding: 0px 3vh;
+    width: 100vw;
+    height: 20vh;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* animados--------------------------------
+animados--------------------------------
+animados--------------------------------
+animados-------------------------------- */
+/* 
+.personaje_A{
+    animation: caida 10s forwards ;
+}
+    
+@keyframes caida{
+        0%{
+            transform: scale(1);
+        }
+       
+        100%{
+            transform: scale(0.01);
+        }
+    } */
